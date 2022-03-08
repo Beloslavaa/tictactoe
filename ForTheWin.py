@@ -35,7 +35,7 @@ class TicTacToe:
                 i=0
             return [i, j]
         else:
-            for i in range(2):
+            for i in range(3):
                 if brd[i, 0] + brd[i, 1] + brd[i, 2] >= 2 and self.full([self.b[i, 0], self.b[i, 1], self.b[i, 2]]) is False:
                     j=self.compare([self.b[i, 0], self.b[i, 1], self.b[i, 2]])
                     return [i, j]
